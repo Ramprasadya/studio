@@ -3,6 +3,7 @@ import connectToMongoose from './db/db.js'
 import userRouter from './routes/userRoute.js'
 import session from 'express-session'
 import passport from 'passport'
+import 'dotenv/config'
 const app = express()
 const port = 2610
 connectToMongoose()
