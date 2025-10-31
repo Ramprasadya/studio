@@ -8,14 +8,14 @@ const app = express()
 const port = 2610
 connectToMongoose()
 
-app.use(session({
-  secret:"iamyadavram",
-  saveUninitialized:false,
-  resave:false,
-  cookie:{
-    maxAge: 60000 *60
-  }
-}))
+// app.use(session({
+//   secret:"iamyadavram",
+//   saveUninitialized:false,
+//   resave:false,
+//   cookie:{
+//     maxAge: 60000 *60
+//   }
+// }))
 
 app.use(passport.initialize());
 app.use(passport.session());
